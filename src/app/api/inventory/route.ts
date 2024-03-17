@@ -1,4 +1,7 @@
 export const runtime = "nodejs";
+
+export const dynamic = "force-dynamic";
+
 export async function GET(request: Request) {
   // This is to prevent the browser from caching the response, we need to be getting the most recent data from Webflow API....
   const timestamp = Date.now();
