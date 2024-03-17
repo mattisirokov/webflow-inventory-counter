@@ -26,6 +26,9 @@ export async function GET(request: Request) {
       headers: {
         "Content-Type": "application/json",
         "Cache-Control": "no-cache, no-store, must-revalidate",
+        "Access-Control-Allow-Origin": "https://gringos.webflow.io",
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Headers": "Content-Type",
       },
     });
   } catch (error) {
